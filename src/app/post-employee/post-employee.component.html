@@ -1,0 +1,13 @@
+<p>post-employee works!</p>
+
+<label>Name</label>
+<input type="text" [(ngModel)]="emp.name" >
+<label> Age </label>
+<input type="number" [(ngModel)]="emp.age" >
+<label>Gender</label>
+<input type="text" [(ngModel)]="emp.gender">
+<label>Salary</label>
+<input type="number" [(ngModel)]="emp.salary">
+
+<button (click)="post()">Submit</button>
+<button (click)="back()">Back</button>

@@ -1,0 +1,32 @@
+<p>employee-list works!</p>
+<table>
+    <thead>
+    <tr>
+        <th> Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th> Gender</th>
+        <th>Salary</th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor= "let e of emp" >
+            <td>{{e.id}}</td>
+               <td> {{e.name}}</td>
+               <td>{{e.age}}</td>
+               <td>{{e.gender}}</td>
+                <td>{{e.salary}}</td>
+                
+            
+            <td>
+                <button (click)= "create()"> AddNewEmp </button>
+                <button (click)= "createView(e.id)">View</button>
+                <button (click)= "update(e.id)"> UpdateNewEmp</button>
+                <button (click)="deleteEmp(e.id)"> Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

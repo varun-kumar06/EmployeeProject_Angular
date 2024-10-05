@@ -1,0 +1,15 @@
+<p>update-employee works!</p>
+
+<label>Id</label>
+<input type="number" [(ngModel)]="emp.id" disabled>
+<label>Name</label>
+<input type="text" [(ngModel)]="emp.name">
+<label>Age</label>
+<input type="number" [(ngModel)]="emp.age">
+<label>Gender</label>
+<input type="text" [(ngModel)]=" emp.gender">
+<label>Salary</label>
+<input type="number" [(ngModel)]="emp.salary">
+
+<button (click)="sub(emp.id,emp)">Update</button>
+<button (click)="back()">Back</button>
